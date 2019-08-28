@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: calculator-test
+  name: calculator-deployment
   labels:
     app: calculator
 spec:
@@ -31,7 +31,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: calculator-test
+  name: calculator-service
 spec:
   type: NodePort
   selector:
@@ -47,7 +47,7 @@ spec:
 api-version: v1
 kind: HorizontalPodAutoscaler 
 metadata: 
-  name: calculator-test 
+  name: calculator-deployment 
   namespace: default
 spec: 
   maxReplicas: 5
