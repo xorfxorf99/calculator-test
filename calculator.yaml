@@ -44,10 +44,10 @@ spec:
     
 --- 
 
-api-version: v1
+api-version: autoscaling/v1
 kind: HorizontalPodAutoscaler 
 metadata: 
-  name: calculator-deployment 
+  name: calculator-hpa 
   namespace: default
 spec: 
   maxReplicas: 5
@@ -55,5 +55,5 @@ spec:
   scaleTargetRef: 
     apiVersion: extensions/v1beta1 
     kind: Deployment
-    name: calculator-test
+    name: calculator-deployment
   targetCPUUtilizationPercentage: 100
