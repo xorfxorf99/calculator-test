@@ -68,4 +68,6 @@ spec:
     apiVersion: extensions/v1beta1 
     kind: Deployment
     name: calculator-deployment
-  targetCPUUtilizationPercentage: 100
+  targetCPUUtilizationPercentage: 100 
+  
+---
