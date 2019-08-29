@@ -20,8 +20,20 @@ spec:
         imagePullPolicy: Always
         resources: 
           requests:
-            memory: 100Mi
+            memory: 150Mi
             cpu: 50m
+        readinessProbe: 
+          httpGet: 
+            path: /healthz 
+            port: 8080 
+          initialDelaySeconds: 30
+          timeoutSeconds: 45
+        livenessProbe: 
+          httpGet: 
+            path: /healthz 
+            port: 8080 
+          initialDelaySeconds: 30
+          timeoutSeconds: 45
         ports:
         - containerPort: 8080
         
