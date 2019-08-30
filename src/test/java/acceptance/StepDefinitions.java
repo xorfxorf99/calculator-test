@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 /** Steps definitions for calculator.feature */
 public class StepDefinitions {
-    private String server = System.getProperty("calculator.url");
+    private String server = "http://134.209.241.234:31002/";
 
     private RestTemplate restTemplate = new RestTemplate();
 
