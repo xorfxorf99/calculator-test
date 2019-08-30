@@ -48,7 +48,7 @@ pipeline {
 
       stage("Acceptance test") {
          steps {
-           sleep 120
+           sleep 90
            sh "./mvnw test -Dcalculator.url=http://134.209.241.234:31002/"
            }
       }
