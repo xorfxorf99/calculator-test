@@ -4,7 +4,7 @@ pipeline {
    environment {
      
      SERVICE_NAME = "calculator-test"
-     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${SERVICE_NAME}:v0.1.${BUILD_ID}"
+     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${SERVICE_NAME}:v0.2.${BUILD_ID}"
    }
    
 //   triggers {
