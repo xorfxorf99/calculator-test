@@ -18,10 +18,10 @@
 #Sample Feature Definition Template
 
 
-@tag
+
 Feature: Calculator
 
-  @tag1
+  
   Scenario: Sum two numbers
     Given I have two numbers: 1 and 2
     When the calculator sums them
